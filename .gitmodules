@@ -1,0 +1,6 @@
+[submodule "microservices/algashop-ordering"]
+	path = microservices/algashop-ordering
+	url = git@github.com:lipex360x/algashop-meta
+[submodule "docs/algashop-docs"]
+	path = docs/algashop-docs
+	url = git@github.com:lipex360x/algashop-meta
