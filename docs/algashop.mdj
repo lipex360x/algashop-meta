@@ -3676,6 +3676,84 @@
 									"direction": "return"
 								}
 							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFH0nroWtA8=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "addLoyaltyPoints",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGbmFKfA7odNbg=",
+									"_parent": {
+										"$ref": "AAAAAAGbmFH0nroWtA8="
+									},
+									"name": "Integer",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFLKMrofNkc=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "archive"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFMjUrom0mo=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "enablePromotionNotification"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFNF/7os3fw=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "disablePromotionNotification"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFOULro0+ew=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "changeName",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGbmFQQs7o71xQ=",
+									"_parent": {
+										"$ref": "AAAAAAGbmFOULro0+ew="
+									},
+									"name": "String",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFQc7Lo9K6A=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "changeEmail"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGbmFQ3y7pE9/k=",
+							"_parent": {
+								"$ref": "AAAAAAGbmAtHA+iq8Kg="
+							},
+							"name": "changePhone"
 						}
 					]
 				},
@@ -4363,6 +4441,7 @@
 											"model": {
 												"$ref": "AAAAAAGbmA7rT+nFXyU="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 269,
@@ -4381,6 +4460,7 @@
 											"model": {
 												"$ref": "AAAAAAGbmA+JAOnQDXQ="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 269,
@@ -4389,6 +4469,132 @@
 											"height": 13,
 											"text": "+isArchived(): Boolean",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFH0p7oZ/JQ=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFH0nroWtA8="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 490,
+											"width": 263,
+											"height": 13,
+											"text": "+addLoyaltyPoints(Integer)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFLKOLoiu1M=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFLKMrofNkc="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 505,
+											"width": 263,
+											"height": 13,
+											"text": "+archive()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFMjWbopm1U=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFMjUrom0mo="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 520,
+											"width": 263,
+											"height": 13,
+											"text": "+enablePromotionNotification()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFNGBLovNMY=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFNF/7os3fw="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 535,
+											"width": 263,
+											"height": 13,
+											"text": "+disablePromotionNotification()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFOUNLo3wyU=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFOULro0+ew="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 550,
+											"width": 263,
+											"height": 13,
+											"text": "+changeName(String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFQc9LpAHfU=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFQc7Lo9K6A="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 565,
+											"width": 263,
+											"height": 13,
+											"text": "+changeEmail()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGbmFQ31LpH4j0=",
+											"_parent": {
+												"$ref": "AAAAAAGbmEP+2LCVlq4="
+											},
+											"model": {
+												"$ref": "AAAAAAGbmFQ3y7pE9/k="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 269,
+											"top": 580,
+											"width": 263,
+											"height": 13,
+											"text": "+changePhone()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
@@ -4396,7 +4602,7 @@
 									"left": 264,
 									"top": 483,
 									"width": 273,
-									"height": 38
+									"height": 115
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
