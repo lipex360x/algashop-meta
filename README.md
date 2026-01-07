@@ -1,1 +1,1 @@
-# algashop-meta
+# AlgaShop
