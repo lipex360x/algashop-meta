@@ -3546,7 +3546,7 @@
 							},
 							"name": "id",
 							"visibility": "private",
-							"type": "UUID"
+							"type": "CustomerId"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3556,7 +3556,7 @@
 							},
 							"name": "fullName",
 							"visibility": "private",
-							"type": "String"
+							"type": "FullName"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3566,7 +3566,7 @@
 							},
 							"name": "birthDate",
 							"visibility": "private",
-							"type": "LocalDate"
+							"type": "BirthDate"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3576,7 +3576,7 @@
 							},
 							"name": "email",
 							"visibility": "private",
-							"type": "String"
+							"type": "Email"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3586,7 +3586,7 @@
 							},
 							"name": "phone",
 							"visibility": "private",
-							"type": "String"
+							"type": "Phone"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3596,7 +3596,7 @@
 							},
 							"name": "document",
 							"visibility": "private",
-							"type": "String"
+							"type": "Document"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3646,7 +3646,7 @@
 							},
 							"name": "loyaltyPoints",
 							"visibility": "private",
-							"type": "Integer"
+							"type": "LoyaltyPoints"
 						}
 					],
 					"operations": [
@@ -3691,8 +3691,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGbmFH0nroWtA8="
 									},
-									"name": "Integer",
-									"type": ""
+									"name": "LoyaltyPoints"
 								}
 							]
 						},
@@ -3734,8 +3733,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGbmFOULro0+ew="
 									},
-									"name": "String",
-									"type": ""
+									"name": "FullName"
 								}
 							]
 						},
@@ -3745,7 +3743,18 @@
 							"_parent": {
 								"$ref": "AAAAAAGbmAtHA+iq8Kg="
 							},
-							"name": "changeEmail"
+							"name": "changeEmail",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGbmNo4z7pVEC4=",
+									"_parent": {
+										"$ref": "AAAAAAGbmFQc7Lo9K6A="
+									},
+									"name": "Email",
+									"type": ""
+								}
+							]
 						},
 						{
 							"_type": "UMLOperation",
@@ -3753,7 +3762,18 @@
 							"_parent": {
 								"$ref": "AAAAAAGbmAtHA+iq8Kg="
 							},
-							"name": "changePhone"
+							"name": "changePhone",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGbmNpN8bpYe1Q=",
+									"_parent": {
+										"$ref": "AAAAAAGbmFQ3y7pE9/k="
+									},
+									"name": "Phone",
+									"type": ""
+								}
+							]
 						}
 					]
 				},
@@ -4231,7 +4251,7 @@
 											"top": 315,
 											"width": 263,
 											"height": 13,
-											"text": "-id: UUID",
+											"text": "-id: CustomerId",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4249,7 +4269,7 @@
 											"top": 330,
 											"width": 263,
 											"height": 13,
-											"text": "-fullName: String",
+											"text": "-fullName: FullName",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4267,7 +4287,7 @@
 											"top": 345,
 											"width": 263,
 											"height": 13,
-											"text": "-birthDate: LocalDate",
+											"text": "-birthDate: BirthDate",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4285,7 +4305,7 @@
 											"top": 360,
 											"width": 263,
 											"height": 13,
-											"text": "-email: String",
+											"text": "-email: Email",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4303,7 +4323,7 @@
 											"top": 375,
 											"width": 263,
 											"height": 13,
-											"text": "-phone: String",
+											"text": "-phone: Phone",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4321,7 +4341,7 @@
 											"top": 390,
 											"width": 263,
 											"height": 13,
-											"text": "-document: String",
+											"text": "-document: Document",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4411,7 +4431,7 @@
 											"top": 465,
 											"width": 263,
 											"height": 13,
-											"text": "-loyaltyPoints: Integer",
+											"text": "-loyaltyPoints: LoyaltyPoints",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4485,7 +4505,7 @@
 											"top": 490,
 											"width": 263,
 											"height": 13,
-											"text": "+addLoyaltyPoints(Integer)",
+											"text": "+addLoyaltyPoints(LoyaltyPoints)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4557,7 +4577,7 @@
 											"top": 550,
 											"width": 263,
 											"height": 13,
-											"text": "+changeName(String)",
+											"text": "+changeName(FullName)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4575,7 +4595,7 @@
 											"top": 565,
 											"width": 263,
 											"height": 13,
-											"text": "+changeEmail()",
+											"text": "+changeEmail(Email)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4593,7 +4613,7 @@
 											"top": 580,
 											"width": 263,
 											"height": 13,
-											"text": "+changePhone()",
+											"text": "+changePhone(Phone)",
 											"horizontalAlignment": 0
 										}
 									],
